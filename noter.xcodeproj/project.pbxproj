@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1372BBB21ECC1B2400C220B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBB11ECC1B2400C220B0 /* main.m */; };
+		1372BBBA1ECC1B7500C220B0 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1372BBB91ECC1B7500C220B0 /* libYGConfig.a */; };
+		1372BBBB1ECC1BF200C220B0 /* noter3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1372BBAE1ECC1B2400C220B0 /* noter3 */; };
+		1372BBC61ECC353800C220B0 /* YGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC51ECC353800C220B0 /* YGApplication.m */; };
+		1372BBC91ECDA87900C220B0 /* YGNoteStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */; };
+		1372BBCF1ECDAA9800C220B0 /* YGRunMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */; };
+		1372BBDC1ECDE9D800C220B0 /* YGNoteName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */; };
+		1372BBE21ECDFC8B00C220B0 /* YGNoteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */; };
+		1372BBE51ECDFE1600C220B0 /* YGNoteTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */; };
+		1372BC3A1ECE4B1E00C220B0 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1372BC391ECE4B1E00C220B0 /* libYGHTMLRanged.a */; };
+		1372BC3F1ECF27FD00C220B0 /* libYGFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1372BC3E1ECF27FD00C220B0 /* libYGFileSystem.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1372BBAC1ECC1B2400C220B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/bin;
+			dstSubfolderSpec = 0;
+			files = (
+				1372BBBB1ECC1BF200C220B0 /* noter3 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1372BBAE1ECC1B2400C220B0 /* noter3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = noter3; sourceTree = BUILT_PRODUCTS_DIR; };
+		1372BBB11ECC1B2400C220B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1372BBB91ECC1B7500C220B0 /* libYGConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGConfig.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/libYGConfig.a"; sourceTree = "<group>"; };
+		1372BBC01ECC1EB800C220B0 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		1372BBC41ECC353800C220B0 /* YGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGApplication.h; sourceTree = "<group>"; };
+		1372BBC51ECC353800C220B0 /* YGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGApplication.m; sourceTree = "<group>"; };
+		1372BBC71ECDA87900C220B0 /* YGNoteStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteStorage.h; sourceTree = "<group>"; };
+		1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteStorage.m; sourceTree = "<group>"; };
+		1372BBCD1ECDAA9800C220B0 /* YGRunMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGRunMode.h; sourceTree = "<group>"; };
+		1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGRunMode.m; sourceTree = "<group>"; };
+		1372BBDA1ECDE9D800C220B0 /* YGNoteName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteName.h; sourceTree = "<group>"; };
+		1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteName.m; sourceTree = "<group>"; };
+		1372BBE01ECDFC8B00C220B0 /* YGNoteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteBuilder.h; sourceTree = "<group>"; };
+		1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteBuilder.m; sourceTree = "<group>"; };
+		1372BBE31ECDFE1600C220B0 /* YGNoteTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteTemplate.h; sourceTree = "<group>"; };
+		1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteTemplate.m; sourceTree = "<group>"; };
+		1372BC391ECE4B1E00C220B0 /* libYGHTMLRanged.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGHTMLRanged.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/libYGHTMLRanged.a"; sourceTree = "<group>"; };
+		1372BC3E1ECF27FD00C220B0 /* libYGFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGFileSystem.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/YGFileSystem-ayxaewihnqzpzjghxsyhrzwaslud/Build/Products/Release/libYGFileSystem.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1372BBAB1ECC1B2400C220B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1372BC3F1ECF27FD00C220B0 /* libYGFileSystem.a in Frameworks */,
+				1372BBBA1ECC1B7500C220B0 /* libYGConfig.a in Frameworks */,
+				1372BC3A1ECE4B1E00C220B0 /* libYGHTMLRanged.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1372BBA51ECC1B2400C220B0 = {
+			isa = PBXGroup;
+			children = (
+				1372BBB01ECC1B2400C220B0 /* noter */,
+				1372BBAF1ECC1B2400C220B0 /* Products */,
+				1372BBB81ECC1B7500C220B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1372BBAF1ECC1B2400C220B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1372BBAE1ECC1B2400C220B0 /* noter3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1372BBB01ECC1B2400C220B0 /* noter */ = {
+			isa = PBXGroup;
+			children = (
+				1372BBB11ECC1B2400C220B0 /* main.m */,
+				1372BBC41ECC353800C220B0 /* YGApplication.h */,
+				1372BBC51ECC353800C220B0 /* YGApplication.m */,
+				1372BBCD1ECDAA9800C220B0 /* YGRunMode.h */,
+				1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */,
+				1372BBDA1ECDE9D800C220B0 /* YGNoteName.h */,
+				1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */,
+				1372BBE31ECDFE1600C220B0 /* YGNoteTemplate.h */,
+				1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */,
+				1372BBE01ECDFC8B00C220B0 /* YGNoteBuilder.h */,
+				1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */,
+				1372BBC71ECDA87900C220B0 /* YGNoteStorage.h */,
+				1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */,
+				1372BBC01ECC1EB800C220B0 /* define.h */,
+			);
+			path = noter;
+			sourceTree = "<group>";
+		};
+		1372BBB81ECC1B7500C220B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1372BC3E1ECF27FD00C220B0 /* libYGFileSystem.a */,
+				1372BC391ECE4B1E00C220B0 /* libYGHTMLRanged.a */,
+				1372BBB91ECC1B7500C220B0 /* libYGConfig.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1372BBAD1ECC1B2400C220B0 /* noter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1372BBB51ECC1B2400C220B0 /* Build configuration list for PBXNativeTarget "noter" */;
+			buildPhases = (
+				1372BBAA1ECC1B2400C220B0 /* Sources */,
+				1372BBAB1ECC1B2400C220B0 /* Frameworks */,
+				1372BBAC1ECC1B2400C220B0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = noter;
+			productName = noter;
+			productReference = 1372BBAE1ECC1B2400C220B0 /* noter3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1372BBA61ECC1B2400C220B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yan Gerasimuk";
+				TargetAttributes = {
+					1372BBAD1ECC1B2400C220B0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EF64T58JW4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1372BBA91ECC1B2400C220B0 /* Build configuration list for PBXProject "noter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1372BBA51ECC1B2400C220B0;
+			productRefGroup = 1372BBAF1ECC1B2400C220B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1372BBAD1ECC1B2400C220B0 /* noter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1372BBAA1ECC1B2400C220B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1372BBC91ECDA87900C220B0 /* YGNoteStorage.m in Sources */,
+				1372BBDC1ECDE9D800C220B0 /* YGNoteName.m in Sources */,
+				1372BBCF1ECDAA9800C220B0 /* YGRunMode.m in Sources */,
+				1372BBC61ECC353800C220B0 /* YGApplication.m in Sources */,
+				1372BBE51ECDFE1600C220B0 /* YGNoteTemplate.m in Sources */,
+				1372BBB21ECC1B2400C220B0 /* main.m in Sources */,
+				1372BBE21ECDFC8B00C220B0 /* YGNoteBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1372BBB31ECC1B2400C220B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/include/YGConfig",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/include/YGHTMLRanged",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-ayxaewihnqzpzjghxsyhrzwaslud/Build/Products/Release/include/YGFileSystem",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-ayxaewihnqzpzjghxsyhrzwaslud/Build/Products/Release",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = noter3;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1372BBB41ECC1B2400C220B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/include/YGConfig",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/include/YGHTMLRanged",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-ayxaewihnqzpzjghxsyhrzwaslud/Build/Products/Release/include/YGFileSystem",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-ayxaewihnqzpzjghxsyhrzwaslud/Build/Products/Release",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = noter3;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1372BBB61ECC1B2400C220B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EF64T58JW4;
+				PRODUCT_NAME = noter3;
+			};
+			name = Debug;
+		};
+		1372BBB71ECC1B2400C220B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EF64T58JW4;
+				PRODUCT_NAME = noter3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1372BBA91ECC1B2400C220B0 /* Build configuration list for PBXProject "noter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1372BBB31ECC1B2400C220B0 /* Debug */,
+				1372BBB41ECC1B2400C220B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1372BBB51ECC1B2400C220B0 /* Build configuration list for PBXNativeTarget "noter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1372BBB61ECC1B2400C220B0 /* Debug */,
+				1372BBB71ECC1B2400C220B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1372BBA61ECC1B2400C220B0 /* Project object */;
+}
