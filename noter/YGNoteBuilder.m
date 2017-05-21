@@ -198,7 +198,11 @@
     
     NSString *titlePrefix = [project valueForKey:@"TitlePrefix"];
     
-    if(!titlePrefix){
+    // if title not defined, try to get prefix from old key
+    if(!titlePrefix
+       && ([titlePrefix compare:@""] != NSOrderedSame)
+       && ([titlePrefix compare:@"(null)"] != NSOrderedSame)){
+        
         titlePrefix = [project valueForKey:@"ListFileTitlePrefix"];
         if(titlePrefix){
             [project setValue:titlePrefix forKey:@"TitlePrefix"];
@@ -206,10 +210,23 @@
         }
     }
     
-    YGHTMLElement *elTitle = [[YGHTMLElement alloc]
-                              initWithOpenTag:openTitle
-                              closeTag:closeTitle
-                              content:[NSString stringWithFormat:@"%@ %@", titlePrefix, app.runMode.noteName]];
+    YGHTMLElement *elTitle = nil;
+    if(!titlePrefix
+       && ([titlePrefix compare:@""] != NSOrderedSame)
+       && ([titlePrefix compare:@"(null)"] != NSOrderedSame)){
+
+        elTitle = [[YGHTMLElement alloc]
+                   initWithOpenTag:openTitle
+                   closeTag:closeTitle
+                   content:app.runMode.noteName];
+    }
+    else{
+        elTitle = [[YGHTMLElement alloc]
+                   initWithOpenTag:openTitle
+                   closeTag:closeTitle
+                   content:[NSString stringWithFormat:@"%@ %@", titlePrefix, app.runMode.noteName]];
+    }
+    
     
     if([htmlBuilder isExistElementWithName:elTitle.name]){
         [htmlBuilder setElementByName:elTitle];
