@@ -200,8 +200,8 @@
     
     // if title not defined, try to get prefix from old key
     if(!titlePrefix
-       && ([titlePrefix compare:@""] != NSOrderedSame)
-       && ([titlePrefix compare:@"(null)"] != NSOrderedSame)){
+       || ([titlePrefix compare:@""] == NSOrderedSame)
+       || ([titlePrefix compare:@"(null)"] == NSOrderedSame)){
         
         titlePrefix = [project valueForKey:@"ListFileTitlePrefix"];
         if(titlePrefix){
@@ -212,8 +212,8 @@
     
     YGHTMLElement *elTitle = nil;
     if(!titlePrefix
-       && ([titlePrefix compare:@""] != NSOrderedSame)
-       && ([titlePrefix compare:@"(null)"] != NSOrderedSame)){
+       || ([titlePrefix compare:@""] == NSOrderedSame)
+       || ([titlePrefix compare:@"(null)"] == NSOrderedSame)){
 
         elTitle = [[YGHTMLElement alloc]
                    initWithOpenTag:openTitle
