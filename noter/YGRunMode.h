@@ -32,6 +32,12 @@ enum YGLaunchExternViewer {
 };
 typedef enum YGLaunchExternViewer YGLaunchExternViewer;
 
+enum YGSourceOfTemplate {
+    YGSourceOfTemplateCode,
+    YGSourceOfTemplateFile
+};
+typedef enum YGSourceOfTemplate YGSourceOfTemplate;
+
 enum YGPrintHelp {
     YGPrintHelpYes,
     YGPrintHelpNo
@@ -40,13 +46,14 @@ typedef enum YGPrintHelp YGPrintHelp;
 
 @interface YGRunMode : NSObject
 
--(void)parsingArguments:(NSArray *)args;
+- (void)parsingArguments:(NSArray *)args;
 
 @property (readonly) YGFileType fileType;
 @property (readonly) NSString *noteName;
 @property (readonly) YGOutputMode outputMode;
 @property (readonly) YGLaunchExternEditor launchExternEditor;
 @property (readonly) YGLaunchExternViewer launchExternViewer;
+@property (readonly) YGSourceOfTemplate sourceOfTemplate;
 @property (readonly) YGPrintHelp printHelp;
 
 @end

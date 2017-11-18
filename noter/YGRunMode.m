@@ -17,7 +17,7 @@
 
 @implementation YGRunMode
 
--(instancetype)init{
+- (instancetype)init{
     self = [super init];
     if(self){
         [self defaultRunMode];
@@ -25,15 +25,16 @@
     return self;
 }
 
--(void)defaultRunMode{
+- (void)defaultRunMode{
+    
     YGConfig *config = [[YGConfig alloc] initWithApplicationName:kNoterAppName];
     
     NSString *value = nil;
     
     value = [config valueForKey:kPreferenceFileTypeKey];
-    if([value compare:@"Note"] == NSOrderedSame)
+    if([value isEqualToString:@"Note"])
         _fileType = YGFileTypeNote;
-    else if([value compare:@"Draft"] == NSOrderedSame)
+    else if([value isEqualToString:@"Draft"])
         _fileType = YGFileTypeDraft;
     else{
         [config setValue:@"Note" forKey:kPreferenceFileTypeKey];
@@ -41,9 +42,9 @@
     }
     
     value = [config valueForKey:kPreferenceOutputModeKey];
-    if([value compare:@"ErrorOnly"] == NSOrderedSame)
+    if([value isEqualToString:@"ErrorOnly"])
         _outputMode = YGOutputModeErrorOnly;
-    else if([value compare:@"LogAndError"] == NSOrderedSame)
+    else if([value isEqualToString:@"LogAndError"])
         _outputMode = YGOutputModeLogAndError;
     else{
         [config setValue:@"ErrorOnly" forKey:kPreferenceOutputModeKey];
@@ -51,9 +52,9 @@
     }
     
     value = [config valueForKey:kPreferenceLaunchExternEditorKey];
-    if([value compare:@"Yes"] == NSOrderedSame)
+    if([value isEqualToString:@"Yes"])
         _launchExternEditor = YGLaunchExternEditorYes;
-    else if([value compare:@"No"] == NSOrderedSame)
+    else if([value isEqualToString:@"No"])
         _launchExternEditor = YGLaunchExternEditorNo;
     else{
         [config setValue:@"Yes" forKey:kPreferenceLaunchExternEditorKey];
@@ -61,19 +62,30 @@
     }
     
     value = [config valueForKey:kPreferenceLaunchExternViewerKey];
-    if([value compare:@"Yes"] == NSOrderedSame)
+    if([value isEqualToString:@"Yes"])
         _launchExternViewer = YGLaunchExternViewerYes;
-    else if([value compare:@"No"] == NSOrderedSame)
+    else if([value isEqualToString:@"No"])
         _launchExternViewer = YGLaunchExternViewerNo;
     else{
         [config setValue:@"Yes" forKey:kPreferenceLaunchExternViewerKey];
         _launchExternViewer = YGLaunchExternViewerYes;
     }
     
+    value = [config valueForKey:kPreferenceSourceOfTemplateKey];
+    if([value isEqualToString:@"Code"])
+        _sourceOfTemplate = YGSourceOfTemplateCode;
+    else if([value isEqualToString:@"File"])
+        _sourceOfTemplate = YGSourceOfTemplateFile;
+    else{
+        [config setValue:@"Code" forKey:kPreferenceSourceOfTemplateKey];
+        _sourceOfTemplate = YGSourceOfTemplateCode;
+    }
+    
     _printHelp = YGPrintHelpNo;
 }
 
--(void)parsingArguments:(NSArray *)args{
+
+- (void)parsingArguments:(NSArray *)args{
     
     unsigned long count = [args count];
     if (count == 0 || count > 3){
@@ -87,7 +99,7 @@
         if([s characterAtIndex:0] == '-'){
             
             // weak preferences
-            for(NSUInteger i = 0; i < [s length]; i++){
+            for(NSUInteger i = 1; i < [s length]; i++){
                 unichar ch = [s characterAtIndex:i];
                 
                 if(ch == 'd')
@@ -100,10 +112,13 @@
                     _launchExternViewer = YGLaunchExternViewerYes;
                 else if(ch == 'h')
                     _printHelp = YGPrintHelpYes;
+                else if(ch == 'f')
+                    _sourceOfTemplate = YGSourceOfTemplateFile;
             }
             
             // strong preferences
-            for(NSUInteger i = 0; i < [s length]; i++){
+            // keys reWrite previous values
+            for(NSUInteger i = 1; i < [s length]; i++){
                 unichar ch = [s characterAtIndex:i];
                 
                 if(ch == 'n')
@@ -113,6 +128,9 @@
                 else if(ch == 's'){
                     _launchExternEditor = YGLaunchExternEditorNo;
                     _launchExternViewer = YGLaunchExternViewerNo;
+                }
+                else if(ch == 'c'){
+                    _sourceOfTemplate = YGSourceOfTemplateCode;
                 }
             }
         }

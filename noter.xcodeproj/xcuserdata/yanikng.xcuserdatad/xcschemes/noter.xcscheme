@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1372BBAD1ECC1B2400C220B0"
-               BuildableName = "noter3"
+               BuildableName = "noter"
                BlueprintName = "noter"
                ReferencedContainer = "container:noter.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1372BBAD1ECC1B2400C220B0"
-            BuildableName = "noter3"
+            BuildableName = "noter"
             BlueprintName = "noter"
             ReferencedContainer = "container:noter.xcodeproj">
          </BuildableReference>
@@ -43,7 +43,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1372BBAD1ECC1B2400C220B0"
-            BuildableName = "noter3"
+            BuildableName = "noter"
             BlueprintName = "noter"
             ReferencedContainer = "container:noter.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1372BBAD1ECC1B2400C220B0"
-            BuildableName = "noter3"
+            BuildableName = "noter"
             BlueprintName = "noter"
             ReferencedContainer = "container:noter.xcodeproj">
          </BuildableReference>

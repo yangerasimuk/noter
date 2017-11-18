@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1347D8081F72E36200C11DB2 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8071F72E36200C11DB2 /* libYGConfig.a */; };
-		1347D80A1F72E38800C11DB2 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8091F72E38800C11DB2 /* libYGHTMLRanged.a */; };
-		1372BBB21ECC1B2400C220B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBB11ECC1B2400C220B0 /* main.m */; };
-		1372BBBB1ECC1BF200C220B0 /* noter3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1372BBAE1ECC1B2400C220B0 /* noter3 */; };
-		1372BBC61ECC353800C220B0 /* YGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC51ECC353800C220B0 /* YGApplication.m */; };
-		1372BBC91ECDA87900C220B0 /* YGNoteStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */; };
-		1372BBCF1ECDAA9800C220B0 /* YGRunMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */; };
-		1372BBDC1ECDE9D800C220B0 /* YGNoteName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */; };
-		1372BBE21ECDFC8B00C220B0 /* YGNoteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */; };
-		1372BBE51ECDFE1600C220B0 /* YGNoteTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */; };
+		13C108401FC0E537000A1F93 /* YGNoteStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */; };
+		13C108411FC0E537000A1F93 /* YGNoteName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */; };
+		13C108421FC0E537000A1F93 /* YGRunMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */; };
+		13C108431FC0E537000A1F93 /* YGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC51ECC353800C220B0 /* YGApplication.m */; };
+		13C108441FC0E537000A1F93 /* YGNoteTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */; };
+		13C108451FC0E537000A1F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBB11ECC1B2400C220B0 /* main.m */; };
+		13C108461FC0E537000A1F93 /* YGNoteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */; };
+		13C108481FC0E537000A1F93 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8091F72E38800C11DB2 /* libYGHTMLRanged.a */; };
+		13C108491FC0E537000A1F93 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8071F72E36200C11DB2 /* libYGConfig.a */; };
+		13FC17511FC0E611000CB7A5 /* noter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13FC174F1FC0E5D8000CB7A5 /* noter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1372BBAC1ECC1B2400C220B0 /* CopyFiles */ = {
+		13C1084A1FC0E537000A1F93 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = /usr/local/bin;
 			dstSubfolderSpec = 0;
 			files = (
-				1372BBBB1ECC1BF200C220B0 /* noter3 in CopyFiles */,
+				13FC17511FC0E611000CB7A5 /* noter in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		1347D8071F72E36200C11DB2 /* libYGConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGConfig.a; path = "../../../../../Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/libYGConfig.a"; sourceTree = "<group>"; };
 		1347D8091F72E38800C11DB2 /* libYGHTMLRanged.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGHTMLRanged.a; path = "../../../../../Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/libYGHTMLRanged.a"; sourceTree = "<group>"; };
-		1372BBAE1ECC1B2400C220B0 /* noter3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = noter3; sourceTree = BUILT_PRODUCTS_DIR; };
 		1372BBB11ECC1B2400C220B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1372BBC01ECC1EB800C220B0 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		1372BBC41ECC353800C220B0 /* YGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGApplication.h; sourceTree = "<group>"; };
@@ -50,15 +49,17 @@
 		1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteBuilder.m; sourceTree = "<group>"; };
 		1372BBE31ECDFE1600C220B0 /* YGNoteTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteTemplate.h; sourceTree = "<group>"; };
 		1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteTemplate.m; sourceTree = "<group>"; };
+		13C1084E1FC0E537000A1F93 /* noter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = noter; path = /Users/yanikng/Documents/dev/project/noter/noter/build/Release/noter; sourceTree = "<absolute>"; };
+		13FC174F1FC0E5D8000CB7A5 /* noter */ = {isa = PBXFileReference; lastKnownFileType = text; name = noter; path = "../../../../../Library/Developer/Xcode/DerivedData/noter-gtletoqlnvxyfzatrcwfkwndvoct/Build/Products/Release/noter"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1372BBAB1ECC1B2400C220B0 /* Frameworks */ = {
+		13C108471FC0E537000A1F93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1347D80A1F72E38800C11DB2 /* libYGHTMLRanged.a in Frameworks */,
-				1347D8081F72E36200C11DB2 /* libYGConfig.a in Frameworks */,
+				13C108481FC0E537000A1F93 /* libYGHTMLRanged.a in Frameworks */,
+				13C108491FC0E537000A1F93 /* libYGConfig.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,17 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				1372BBB01ECC1B2400C220B0 /* noter */,
-				1372BBAF1ECC1B2400C220B0 /* Products */,
 				1372BBB81ECC1B7500C220B0 /* Frameworks */,
+				13FC174E1FC0E5D3000CB7A5 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		1372BBAF1ECC1B2400C220B0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1372BBAE1ECC1B2400C220B0 /* noter3 */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1372BBB01ECC1B2400C220B0 /* noter */ = {
@@ -112,16 +105,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		13FC174E1FC0E5D3000CB7A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13FC174F1FC0E5D8000CB7A5 /* noter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1372BBAD1ECC1B2400C220B0 /* noter */ = {
+		13C1083E1FC0E537000A1F93 /* noter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1372BBB51ECC1B2400C220B0 /* Build configuration list for PBXNativeTarget "noter" */;
+			buildConfigurationList = 13C1084B1FC0E537000A1F93 /* Build configuration list for PBXNativeTarget "noter" */;
 			buildPhases = (
-				1372BBAA1ECC1B2400C220B0 /* Sources */,
-				1372BBAB1ECC1B2400C220B0 /* Frameworks */,
-				1372BBAC1ECC1B2400C220B0 /* CopyFiles */,
+				13C1083F1FC0E537000A1F93 /* Sources */,
+				13C108471FC0E537000A1F93 /* Frameworks */,
+				13C1084A1FC0E537000A1F93 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -129,7 +130,7 @@
 			);
 			name = noter;
 			productName = noter;
-			productReference = 1372BBAE1ECC1B2400C220B0 /* noter3 */;
+			productReference = 13C1084E1FC0E537000A1F93 /* noter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -141,10 +142,8 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Yan Gerasimuk";
 				TargetAttributes = {
-					1372BBAD1ECC1B2400C220B0 = {
-						CreatedOnToolsVersion = 8.3.2;
+					13C1083E1FC0E537000A1F93 = {
 						DevelopmentTeam = EF64T58JW4;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -156,27 +155,27 @@
 				en,
 			);
 			mainGroup = 1372BBA51ECC1B2400C220B0;
-			productRefGroup = 1372BBAF1ECC1B2400C220B0 /* Products */;
+			productRefGroup = 1372BBA51ECC1B2400C220B0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1372BBAD1ECC1B2400C220B0 /* noter */,
+				13C1083E1FC0E537000A1F93 /* noter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1372BBAA1ECC1B2400C220B0 /* Sources */ = {
+		13C1083F1FC0E537000A1F93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1372BBC91ECDA87900C220B0 /* YGNoteStorage.m in Sources */,
-				1372BBDC1ECDE9D800C220B0 /* YGNoteName.m in Sources */,
-				1372BBCF1ECDAA9800C220B0 /* YGRunMode.m in Sources */,
-				1372BBC61ECC353800C220B0 /* YGApplication.m in Sources */,
-				1372BBE51ECDFE1600C220B0 /* YGNoteTemplate.m in Sources */,
-				1372BBB21ECC1B2400C220B0 /* main.m in Sources */,
-				1372BBE21ECDFC8B00C220B0 /* YGNoteBuilder.m in Sources */,
+				13C108401FC0E537000A1F93 /* YGNoteStorage.m in Sources */,
+				13C108411FC0E537000A1F93 /* YGNoteName.m in Sources */,
+				13C108421FC0E537000A1F93 /* YGRunMode.m in Sources */,
+				13C108431FC0E537000A1F93 /* YGApplication.m in Sources */,
+				13C108441FC0E537000A1F93 /* YGNoteTemplate.m in Sources */,
+				13C108451FC0E537000A1F93 /* main.m in Sources */,
+				13C108461FC0E537000A1F93 /* YGNoteBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +235,14 @@
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release/include/YGFileSystem",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Debug",
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release",
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = noter3;
+				PRODUCT_NAME = noter;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -302,25 +301,25 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = noter3;
+				PRODUCT_NAME = noter;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
-		1372BBB61ECC1B2400C220B0 /* Debug */ = {
+		13C1084C1FC0E537000A1F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EF64T58JW4;
-				PRODUCT_NAME = noter3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1372BBB71ECC1B2400C220B0 /* Release */ = {
+		13C1084D1FC0E537000A1F93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EF64T58JW4;
-				PRODUCT_NAME = noter3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -336,11 +335,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1372BBB51ECC1B2400C220B0 /* Build configuration list for PBXNativeTarget "noter" */ = {
+		13C1084B1FC0E537000A1F93 /* Build configuration list for PBXNativeTarget "noter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1372BBB61ECC1B2400C220B0 /* Debug */,
-				1372BBB71ECC1B2400C220B0 /* Release */,
+				13C1084C1FC0E537000A1F93 /* Debug */,
+				13C1084D1FC0E537000A1F93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

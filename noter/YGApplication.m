@@ -85,6 +85,11 @@
     else
         [result appendString:@" | OutputMode: ErrorOnly"];
     
+    if(self.runMode.sourceOfTemplate == YGSourceOfTemplateFile)
+        [result appendString:@" | SourceOfTemplate: File"];
+    else
+        [result appendString:@" | SourceOfTemplate: Code"];
+    
     if(self.runMode.printHelp == YGPrintHelpYes)
         [result appendString:@" | PrintHelp: Yes"];
     else
@@ -94,10 +99,10 @@
 }
 
 + (void) printInfoAndHelp{
-    printf("\nnoter. Create html-note from template. Version: %s, build: %s. %s.", [kNoterVersion UTF8String], [kNoterBuild UTF8String], [kNoterAuthor UTF8String]);
+    printf("\nnoter. Create HTML-note from template. Version: %s, build: %s. %s.", [kNoterVersion UTF8String], [kNoterBuild UTF8String], [kNoterAuthor UTF8String]);
     
     printf("\nUsage: \
-           \nnoter -<options:ndhlexvs> <name> \
+           \nnoter -<options:ndhlexvcts> <name> \
            \nOptions: \
            \n\tn - generate note (default) \
            \n\td - generate draft from template \
@@ -106,6 +111,8 @@
            \n\tl - print log about app works \
            \n\tx - launch extern editor (default) \
            \n\tv - launch extern viewer (default) \
+           \n\tc - source of template - code (default) \
+           \n\tf - source of template - file \
            \n\ts - do not launch extern apps");
     
     printf("\nConfig file: ~/.noter.config.xml");

@@ -12,9 +12,9 @@
 
 Примеры практического использования:
 
-noter3 "New note" // создать заметку вида - *2017-09-20, New note.html*
+noter "New note" // создать заметку вида - *2017-09-20, New note.html*
 
-noter3 -d "New draft" // создать документ/черновик с именем - *New draft.2017-09-20.html*
+noter -d "New draft" // создать документ/черновик с именем - *New draft.2017-09-20.html*
 
 ## Зависимости
 Для сборки программы необходимо подключить библиотеки libYGFileSystem, libYGHTMLRanged и libYGConfig.
