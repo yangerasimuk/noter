@@ -70,13 +70,19 @@
 + (NSString *) timeStampWithName:(NSString *)rawName fileType:(YGFileType)fileType{
     
     NSString *resultName = @"";
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     NSString *dateString = @"";
     
-    [formatter setDateFormat:@"yyyy-MM-dd"];
+    YGApplication *app = [YGApplication sharedInstance];
     
-    dateString = [formatter stringFromDate:date];
+    if (app.runMode.timeStamp == YGTimeStampCustom) {
+        dateString = app.runMode.noteTimeStamp;
+    }
+    else {
+        NSDate *date = [NSDate date];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd"];
+        dateString = [formatter stringFromDate:date];
+    }
     
     if(fileType == YGFileTypeNote){
         // define type of filename: with space or with hyphen
@@ -96,7 +102,6 @@
         resultName = [NSString stringWithFormat:@"%@.%@.html", [YGNoteName normalizeName:rawName], dateString];
     }
     
-    YGApplication *app = [YGApplication sharedInstance];
     if(app.runMode.outputMode == YGOutputModeLogAndError)
         printf("\nName: %s", [resultName UTF8String]);
     

@@ -307,7 +307,7 @@
     return retArray;
 }
 
-+ (NSString *) getHumanDate{
++ (NSString *) getHumanDate {
 #ifdef FUNC_DEBUG
 #undef FUNC_DEBUG
 #endif
@@ -315,24 +315,28 @@
 #ifdef FUNC_DEBUG
     printf("\n\t+[YGTools getHumanDate:]...");
 #endif
-    /*
-    NSDateFormatter *formatterFromString = [[NSDateFormatter alloc] init];
-    // this is imporant - we set our input date format to match our input string
-    // if format doesn't match you'll get nil from your string, so be careful
-    [formatterFromString setDateFormat:@"yyyy-MM-dd"];
-    NSDate *dateFromString = [[NSDate alloc] init];
-    // voila!
-    dateFromString = [formatterFromString dateFromString:dateString];
-     */
-    NSDate *date = [NSDate date];
     
+    NSString *resultString = nil;
+    NSDate *date = nil;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     
+    YGApplication *app = [YGApplication sharedInstance];
+    
+    if (app.runMode.timeStamp == YGTimeStampCustom) {
+        [formatter setDateFormat:@"yyyy-MM-dd"];
+        [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+        date = [formatter dateFromString:app.runMode.noteTimeStamp];
+    }
+    else {
+        date = [NSDate date];
+    }
+    
+    [formatter setDateFormat:nil];
     [formatter setTimeZone:[NSTimeZone localTimeZone]];
     [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"]];
     [formatter setDateStyle:NSDateFormatterLongStyle];
     
-    NSString *resultString = [formatter stringFromDate:date];
+    resultString = [formatter stringFromDate:date];
     
 #ifdef FUNC_DEBUG
     printf("\n\t\tHuman date: %s", [resultString cStringUsingEncoding:NSUTF8StringEncoding]);

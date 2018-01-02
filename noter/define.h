@@ -7,8 +7,8 @@
 //
 
 #define kNoterAppName @"noter"
-#define kNoterVersion @"0.4.1"
-#define kNoterBuild @"November 19, 2017"
+#define kNoterVersion @"0.4.2"
+#define kNoterBuild @"January 2, 2018"
 #define kNoterAuthor @"Yan Gerasimuk"
 
 #define kPreferenceFileTypeKey @"FileType"
@@ -16,6 +16,7 @@
 #define kPreferenceLaunchExternEditorKey @"LaunchExternEditor"
 #define kPreferenceLaunchExternViewerKey @"LaunchExternViewer"
 #define kPreferenceSourceOfTemplateKey @"SourceOfTemplate"
+#define kPreferenceTimeStampKey @"TimeStamp"
 
 #define kExternalEditorKey @"ExternalEditor"
 #define kExternalEditor @"TextWrangler.app"
@@ -28,7 +29,6 @@
 #define kMetaPrefix @"MetaPrefix"
 #define kMetaDateTimeFormat @"yyyy-MM-dd HH:mm:ss Z"
 
-
 #define kArgErrorWrongCountN 1
 #define kArgErrorWrondCountMessage @"Wrong argument count"
 
@@ -40,3 +40,6 @@
 
 #define kNewNoterNotSavedErrorN 4
 #define kNewNoterNotSavedErrorMessage @"New noter file is not saved"
+
+#define kArgErrorTimeStampIsNotConfirmPatternN 5
+#define kArgErrorTimeStampIsNotConfirmPatternMessage @"Custom timestamp is not confirm pattern"

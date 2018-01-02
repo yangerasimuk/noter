@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1356D4841FFC1DCA0031C683 /* YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1356D4831FFC1DCA0031C683 /* YGTool.m */; };
 		13C108401FC0E537000A1F93 /* YGNoteStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */; };
 		13C108411FC0E537000A1F93 /* YGNoteName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */; };
 		13C108421FC0E537000A1F93 /* YGRunMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */; };
@@ -16,7 +17,7 @@
 		13C108461FC0E537000A1F93 /* YGNoteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */; };
 		13C108481FC0E537000A1F93 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8091F72E38800C11DB2 /* libYGHTMLRanged.a */; };
 		13C108491FC0E537000A1F93 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347D8071F72E36200C11DB2 /* libYGConfig.a */; };
-		13FC17511FC0E611000CB7A5 /* noter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13FC174F1FC0E5D8000CB7A5 /* noter */; };
+		13FC17531FC0EABA000CB7A5 /* noter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13FC17521FC0E88D000CB7A5 /* noter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,7 @@
 			dstPath = /usr/local/bin;
 			dstSubfolderSpec = 0;
 			files = (
-				13FC17511FC0E611000CB7A5 /* noter in CopyFiles */,
+				13FC17531FC0EABA000CB7A5 /* noter in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		1347D8071F72E36200C11DB2 /* libYGConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGConfig.a; path = "../../../../../Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/libYGConfig.a"; sourceTree = "<group>"; };
 		1347D8091F72E38800C11DB2 /* libYGHTMLRanged.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGHTMLRanged.a; path = "../../../../../Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/libYGHTMLRanged.a"; sourceTree = "<group>"; };
+		1356D4821FFC1DCA0031C683 /* YGTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGTool.h; sourceTree = "<group>"; };
+		1356D4831FFC1DCA0031C683 /* YGTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGTool.m; sourceTree = "<group>"; };
 		1372BBB11ECC1B2400C220B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1372BBC01ECC1EB800C220B0 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		1372BBC41ECC353800C220B0 /* YGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGApplication.h; sourceTree = "<group>"; };
@@ -49,8 +52,7 @@
 		1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteBuilder.m; sourceTree = "<group>"; };
 		1372BBE31ECDFE1600C220B0 /* YGNoteTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNoteTemplate.h; sourceTree = "<group>"; };
 		1372BBE41ECDFE1600C220B0 /* YGNoteTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNoteTemplate.m; sourceTree = "<group>"; };
-		13C1084E1FC0E537000A1F93 /* noter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = noter; path = /Users/yanikng/Documents/dev/project/noter/noter/build/Release/noter; sourceTree = "<absolute>"; };
-		13FC174F1FC0E5D8000CB7A5 /* noter */ = {isa = PBXFileReference; lastKnownFileType = text; name = noter; path = "../../../../../Library/Developer/Xcode/DerivedData/noter-gtletoqlnvxyfzatrcwfkwndvoct/Build/Products/Release/noter"; sourceTree = "<group>"; };
+		13FC17521FC0E88D000CB7A5 /* noter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = noter; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,7 @@
 			children = (
 				1372BBB01ECC1B2400C220B0 /* noter */,
 				1372BBB81ECC1B7500C220B0 /* Frameworks */,
-				13FC174E1FC0E5D3000CB7A5 /* Products */,
+				13FC17521FC0E88D000CB7A5 /* noter */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +93,8 @@
 				1372BBE11ECDFC8B00C220B0 /* YGNoteBuilder.m */,
 				1372BBC71ECDA87900C220B0 /* YGNoteStorage.h */,
 				1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */,
+				1356D4821FFC1DCA0031C683 /* YGTool.h */,
+				1356D4831FFC1DCA0031C683 /* YGTool.m */,
 				1372BBC01ECC1EB800C220B0 /* define.h */,
 			);
 			path = noter;
@@ -103,14 +107,6 @@
 				1347D8071F72E36200C11DB2 /* libYGConfig.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		13FC174E1FC0E5D3000CB7A5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13FC174F1FC0E5D8000CB7A5 /* noter */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +126,7 @@
 			);
 			name = noter;
 			productName = noter;
-			productReference = 13C1084E1FC0E537000A1F93 /* noter */;
+			productReference = 13FC17521FC0E88D000CB7A5 /* noter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -170,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C108401FC0E537000A1F93 /* YGNoteStorage.m in Sources */,
+				1356D4841FFC1DCA0031C683 /* YGTool.m in Sources */,
 				13C108411FC0E537000A1F93 /* YGNoteName.m in Sources */,
 				13C108421FC0E537000A1F93 /* YGRunMode.m in Sources */,
 				13C108431FC0E537000A1F93 /* YGApplication.m in Sources */,
@@ -231,13 +228,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/include/YGConfig",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/include/YGHTMLRanged",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release/include/YGFileSystem",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Debug/include/YGHTMLRanged",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Debug/include/YGFileSystem",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Debug",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Debug",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -291,13 +288,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release/include/YGConfig",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release/include/YGHTMLRanged",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release/include/YGFileSystem",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Debug/include/YGHTMLRanged",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Debug/include/YGFileSystem",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGConfig-bjtebflibbamtldcudmvudoakine/Build/Products/Release",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Release",
-					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Release",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGHTMLRanged-dqpixpstflpjqfgrikylenjsdvui/Build/Products/Debug",
+					"/Users/yanikng/Library/Developer/Xcode/DerivedData/YGFileSystem-dovcmsxgnkazydfacanitdbfsoqz/Build/Products/Debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;

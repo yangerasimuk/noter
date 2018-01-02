@@ -38,6 +38,12 @@ enum YGSourceOfTemplate {
 };
 typedef enum YGSourceOfTemplate YGSourceOfTemplate;
 
+enum YGTimeStamp {
+    YGTimeStampNow,
+    YGTimeStampCustom
+};
+typedef enum YGTimeStamp YGTimeStamp;
+
 enum YGPrintHelp {
     YGPrintHelpYes,
     YGPrintHelpNo
@@ -54,6 +60,8 @@ typedef enum YGPrintHelp YGPrintHelp;
 @property (readonly) YGLaunchExternEditor launchExternEditor;
 @property (readonly) YGLaunchExternViewer launchExternViewer;
 @property (readonly) YGSourceOfTemplate sourceOfTemplate;
+@property (readonly) YGTimeStamp timeStamp;
+@property (readonly) NSString *noteTimeStamp;
 @property (readonly) YGPrintHelp printHelp;
 
 @end

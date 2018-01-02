@@ -8,6 +8,7 @@
 
 #import "YGRunMode.h"
 #import "YGApplication.h"
+#import "YGTool.h"
 #import "define.h"
 #import <YGConfig.h>
 
@@ -81,6 +82,7 @@
         _sourceOfTemplate = YGSourceOfTemplateCode;
     }
     
+    _timeStamp = YGTimeStampNow;
     _printHelp = YGPrintHelpNo;
 }
 
@@ -114,6 +116,8 @@
                     _printHelp = YGPrintHelpYes;
                 else if(ch == 'f')
                     _sourceOfTemplate = YGSourceOfTemplateFile;
+                else if(ch == 't')
+                    _timeStamp = YGTimeStampCustom;
             }
             
             // strong preferences
@@ -131,6 +135,26 @@
                 }
                 else if(ch == 'c'){
                     _sourceOfTemplate = YGSourceOfTemplateCode;
+                }
+            }
+            
+            // have custome timeStamp
+            if (_timeStamp == YGTimeStampCustom) {
+                
+                NSInteger index = 0;
+                for (NSUInteger i = 0; i < [s length]; i++){
+                    unichar ch = [s characterAtIndex:i];
+                    if (ch == 't')
+                        index = i + 1;
+                }
+                
+                _noteTimeStamp = [s substringFromIndex:index];
+                
+                if (![YGTool string:_noteTimeStamp confirmTo:@"([0-9]{4}-[0-9]{2}-[0-9]{2})"]) {
+                    YGApplication *app = [YGApplication sharedInstance];
+                    app.lastErrorNumber = kArgErrorTimeStampIsNotConfirmPatternN;
+                    app.lastErrorMessage = kArgErrorTimeStampIsNotConfirmPatternMessage;
+                    return;
                 }
             }
         }
