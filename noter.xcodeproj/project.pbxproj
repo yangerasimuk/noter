@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1356D4841FFC1DCA0031C683 /* YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1356D4831FFC1DCA0031C683 /* YGTool.m */; };
-		1356D4AF1FFC379A0031C683 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4AE1FFC37990031C683 /* libYGHTMLRanged.a */; };
-		1356D4B11FFC37AA0031C683 /* libYGFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4B01FFC37A90031C683 /* libYGFileSystem.a */; };
-		1356D4B31FFC37BA0031C683 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4B21FFC37BA0031C683 /* libYGConfig.a */; };
+		1356D4BA1FFC3EFD0031C683 /* libYGFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4B91FFC3EFD0031C683 /* libYGFileSystem.a */; };
+		1356D4BC1FFC3F330031C683 /* libYGHTMLRanged.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4BB1FFC3F330031C683 /* libYGHTMLRanged.a */; };
+		1356D4BE1FFC40930031C683 /* libYGConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356D4BD1FFC40930031C683 /* libYGConfig.a */; };
 		13C108401FC0E537000A1F93 /* YGNoteStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBC81ECDA87900C220B0 /* YGNoteStorage.m */; };
 		13C108411FC0E537000A1F93 /* YGNoteName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBDB1ECDE9D800C220B0 /* YGNoteName.m */; };
 		13C108421FC0E537000A1F93 /* YGRunMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1372BBCE1ECDAA9800C220B0 /* YGRunMode.m */; };
@@ -37,9 +37,9 @@
 /* Begin PBXFileReference section */
 		1356D4821FFC1DCA0031C683 /* YGTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGTool.h; sourceTree = "<group>"; };
 		1356D4831FFC1DCA0031C683 /* YGTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGTool.m; sourceTree = "<group>"; };
-		1356D4AE1FFC37990031C683 /* libYGHTMLRanged.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGHTMLRanged.a; path = ../../../../../Library/YGHTMLRanged/libYGHTMLRanged.a; sourceTree = "<group>"; };
-		1356D4B01FFC37A90031C683 /* libYGFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGFileSystem.a; path = ../../../../../Library/YGFileSystem/libYGFileSystem.a; sourceTree = "<group>"; };
-		1356D4B21FFC37BA0031C683 /* libYGConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGConfig.a; path = ../../../../../Library/YGConfig/libYGConfig.a; sourceTree = "<group>"; };
+		1356D4B91FFC3EFD0031C683 /* libYGFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGFileSystem.a; path = ../../../../../Library/YGFileSystem/libYGFileSystem.a; sourceTree = "<group>"; };
+		1356D4BB1FFC3F330031C683 /* libYGHTMLRanged.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGHTMLRanged.a; path = ../../../../../Library/YGHTMLRanged/libYGHTMLRanged.a; sourceTree = "<group>"; };
+		1356D4BD1FFC40930031C683 /* libYGConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYGConfig.a; path = ../../../../../Library/YGConfig/libYGConfig.a; sourceTree = "<group>"; };
 		1372BBB11ECC1B2400C220B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1372BBC01ECC1EB800C220B0 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		1372BBC41ECC353800C220B0 /* YGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGApplication.h; sourceTree = "<group>"; };
@@ -62,21 +62,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1356D4B31FFC37BA0031C683 /* libYGConfig.a in Frameworks */,
-				1356D4B11FFC37AA0031C683 /* libYGFileSystem.a in Frameworks */,
-				1356D4AF1FFC379A0031C683 /* libYGHTMLRanged.a in Frameworks */,
+				1356D4BE1FFC40930031C683 /* libYGConfig.a in Frameworks */,
+				1356D4BC1FFC3F330031C683 /* libYGHTMLRanged.a in Frameworks */,
+				1356D4BA1FFC3EFD0031C683 /* libYGFileSystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1356D4B61FFC3EE80031C683 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1356D4BD1FFC40930031C683 /* libYGConfig.a */,
+				1356D4BB1FFC3F330031C683 /* libYGHTMLRanged.a */,
+				1356D4B91FFC3EFD0031C683 /* libYGFileSystem.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1372BBA51ECC1B2400C220B0 = {
 			isa = PBXGroup;
 			children = (
 				1372BBB01ECC1B2400C220B0 /* noter */,
-				1372BBB81ECC1B7500C220B0 /* Frameworks */,
 				13FC17521FC0E88D000CB7A5 /* noter */,
+				1356D4B61FFC3EE80031C683 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,16 +111,6 @@
 				1372BBC01ECC1EB800C220B0 /* define.h */,
 			);
 			path = noter;
-			sourceTree = "<group>";
-		};
-		1372BBB81ECC1B7500C220B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1356D4B21FFC37BA0031C683 /* libYGConfig.a */,
-				1356D4B01FFC37A90031C683 /* libYGFileSystem.a */,
-				1356D4AE1FFC37990031C683 /* libYGHTMLRanged.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,14 +231,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/yanikng/Library/YGHTMLRanged/include,
-					/Users/yanikng/Library/YGFileSystem/include,
-					/Users/yanikng/Library/YGConfig/include,
+					"$(USER_LIBRARY_DIR)/YGHTMLRanged/include",
+					"$(USER_LIBRARY_DIR)/YGFileSystem/include",
+					"$(USER_LIBRARY_DIR)/YGConfig/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/Users/yanikng/Library/YGHTMLRanged,
-					/Users/yanikng/Library/YGFileSystem,
-					/Users/yanikng/Library/YGConfig,
+					"$(USER_LIBRARY_DIR)/YGHTMLRanged",
+					"$(USER_LIBRARY_DIR)/YGFileSystem",
+					"$(USER_LIBRARY_DIR)/YGConfig",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -291,14 +291,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/yanikng/Library/YGHTMLRanged/include,
-					/Users/yanikng/Library/YGFileSystem/include,
-					/Users/yanikng/Library/YGConfig/include,
+					"$(USER_LIBRARY_DIR)/YGHTMLRanged/include",
+					"$(USER_LIBRARY_DIR)/YGFileSystem/include",
+					"$(USER_LIBRARY_DIR)/YGConfig/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/Users/yanikng/Library/YGHTMLRanged,
-					/Users/yanikng/Library/YGFileSystem,
-					/Users/yanikng/Library/YGConfig,
+					"$(USER_LIBRARY_DIR)/YGHTMLRanged",
+					"$(USER_LIBRARY_DIR)/YGFileSystem",
+					"$(USER_LIBRARY_DIR)/YGConfig",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -313,7 +313,6 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = EF64T58JW4;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/YGHTMLRanged",
 					"$(USER_LIBRARY_DIR)/YGFileSystem",
 					"$(USER_LIBRARY_DIR)/YGConfig",
@@ -327,7 +326,6 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = EF64T58JW4;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/YGHTMLRanged",
 					"$(USER_LIBRARY_DIR)/YGFileSystem",
 					"$(USER_LIBRARY_DIR)/YGConfig",
